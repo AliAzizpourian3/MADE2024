@@ -26,7 +26,7 @@ If you are interested in exploring the datasets used in this project, you can vi
 
 You can also view the slides that summarize this project and its findings:
 
-[Prsentation](./project/slides.pdf)
+[Presentation](./project/slides.pdf)
 
 
 
