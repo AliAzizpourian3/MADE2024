@@ -32,18 +32,18 @@ You can also view the slides that summarize this project and its findings:
 
 ## How to Use
 
-### 1.Clone this Git repository:
+### 1. Clone this Git repository:
 ```bash
 git clone https://github.com/magicreally/made-template-ss24.git
 ```
 
-### 2.Install the required dependencies:
+### 2. Install the required dependencies:
 
 ```bash
 ./project/reqInstall.sh
 
 ```
-### 3.Run the data processing pipeline:
+### 3. Run the data processing pipeline:
 
 ```bash
 ./project/pipeline.sh
