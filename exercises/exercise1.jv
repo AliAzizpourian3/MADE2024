@@ -1,19 +1,19 @@
 pipeline AirportsPipeline {
 
-    // Step 1: Extract the data from the provided URL
+    // Step 1
     block DataExtractor oftype HttpExtractor {
         url: "https://opendata.rhein-kreis-neuss.de/api/explore/v2.1/catalog/datasets/rhein-kreis-neuss-flughafen-weltweit/exports/csv?lang=en&timezone=Europe%2FBerlin&use_labels=true&delimiter=%3B";
     }
 
-    // Step 2: Interpret the fetched file as a text file
+    // Step 2
     block TextFileInterpreter oftype TextFileInterpreter {}
 
-    // Step 3: Parse the data as CSV (semicolon delimiter)
+    // Step 3 
     block CSVInterpreter oftype CSVInterpreter {
         delimiter: ";";
     }
 
-    // Step 4: Define the structure of the table and assign types
+    // Step 4
     block TableInterpreter oftype TableInterpreter {
         header: true;
         columns: [
@@ -28,12 +28,12 @@ pipeline AirportsPipeline {
         ];
     }
 
-    // Step 5: Load the data into the SQLite database
+    // Step 5
     block SQLiteLoader oftype SQLiteLoader {
         table: "airports";
         file: "./airports.sqlite";
     }
 
-    // Connect the blocks to form the data pipeline
+    
     DataExtractor -> TextFileInterpreter -> CSVInterpreter -> TableInterpreter -> SQLiteLoader;
 }
