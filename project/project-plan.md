@@ -38,8 +38,7 @@ This project aims to analyse the relationship between wage levels and health ins
 3. **Data Integration**
    - Merge both datasets based on the common year column to allow for joint analysis of wages and insurance coverage.
    - 
-   - 
-
+   
 
 4. **Data Analysis**
    - 
