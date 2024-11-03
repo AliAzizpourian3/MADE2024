@@ -7,7 +7,7 @@ Analysing the Impact of Wage Levels on Health Insurance Coverage in the U.S.
 1. Is there a correlation between wage levels and health insurance coverage rates across different demographics in the United States?
 
 ## Description
-This project aims to analyse the relationship between wage levels and health insurance coverage in the United States. By exploring historical data on wages and health insurance coverage rates among various demographic groups, we seek to understand how income levels influence access to healthcare. The project will involve statistical analysis to evaluate correlations and identify trends that could inform socio-economic policies and strategies to improve healthcare access. Through this analysis, we aim to uncover insights into the role of income in determining healthcare coverage.
+This project aims to analyse the relationship between wage levels and health insurance coverage in the United States. By exploring historical data on wages and health insurance coverage rates among various demographic groups, we seek to understand how income levels influence access to healthcare. The project will involve statistical analysis to evaluate correlations and identify trends. Through this analysis, we aim to uncover insights into the role of income in determining healthcare coverage.
 
 ## Datasources
 
@@ -31,7 +31,7 @@ This project aims to analyse the relationship between wage levels and health ins
    
 2. **Data Preprocessing**
    - Clean data by removing symbols (`$`, `%`, `,`) and converting relevant columns to numeric types.
-   - Handle missing values by filtering datasets to include only years with complete data.
+   - Handle missing values by filtering datasets to include only years with complete data(from 1985 both data set has completed data)
    - 
    - 
 
