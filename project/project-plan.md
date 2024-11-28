@@ -1,53 +1,74 @@
 # Project Plan
 
-## Title
-Analysing the Impact of Wage Levels on Health Insurance Coverage in the U.S.
-
-## Main Question
-1. Is there a correlation between wage levels and health insurance coverage rates across different demographics in the United States?
-
-## Description
-This project aims to analyse the relationship between wage levels and health insurance coverage in the United States. By exploring historical data on wages and health insurance coverage rates among various demographic groups, we seek to understand how income levels influence access to healthcare. The project will involve statistical analysis to evaluate correlations and identify trends. Through this analysis, we aim to uncover insights into the role of income in determining healthcare coverage.
-
-## Datasources
-
-**Datasource 1**: Annual Wages
-- **Metadata URL**: [https://www.epi.org/data/#?subject=hours](https://www.epi.org/data/#?subject=hours)  
-- **Data URL**: Local CSV file at `data/EPI Data Library - Annual wages and work hours.csv`  
-- **Data Type**: CSV  
-- **Description**: This dataset provides data on annual, weekly, and hourly wages for U.S. wage and salary workers across different years. It includes demographic breakdowns, capturing wage trends over time.
-
-**Datasource 2**: Health Insurance Coverage  
-- **Metadata URL**: [https://www.epi.org/data/#/?subject=healthcov&g=*&e=*&el=*](https://www.epi.org/data/#/?subject=healthcov&g=*&e=*&el=*)  
-- **Data URL**: Local CSV file at `data/EPI Data Library - Health insurance coverage.csv`  
-- **Data Type**: CSV  
-- **Description**: This dataset includes health insurance coverage rates for different demographic groups such as gender and educational attainment. It focuses on private-sector workers aged 18–64 who worked regular hours.
-
-
-## Work Packages
-
-1. **Data Acquisition**
-   - Gather and organize datasets on wages, work hours, and health insurance coverage.
-   
-2. **Data Preprocessing**
-   - Clean data by removing symbols (`$`, `%`, `,`) and converting relevant columns to numeric types.
-   - Handle missing values by filtering datasets to include only years with complete data(from 1985 both data set has completed data)
-   - 
-   - 
-
-3. **Data Integration**
-   - Merge both datasets based on the common year column to allow for joint analysis of wages and insurance coverage.
-   - 
-   
-
-4. **Data Analysis**
-   - 
-   - 
-   - 
-5. **Reporting**
-   - 
-   - 
+## **Title**
+Educational Attainment and Income Correlation in the United States
 
 ---
 
-> **Note**: This project plan is a living document and may be updated or refined as the project progresses.
+## **Main Question**
+How does the level of educational attainment influence income levels across different states and cities in the United States?
+
+---
+
+## **Description**
+This project explores the potential relationship between education levels and income distribution across the U.S. By analyzing educational attainment data and income data, the goal is to identify patterns and trends that explain how education impacts income levels across states and cities. This analysis aims to provide insights into socioeconomic disparities and how they vary regionally.
+
+---
+
+## **Datasources**
+
+### **Datasource 1**: S1501 | Educational Attainment
+- **Metadata URL**: [Census S1501 Educational Attainment](https://data.census.gov/table?q=S1501)
+- **Data URL**: Provided CSV file
+- **Data Type**: CSV  
+- **Description**: This dataset contains detailed data on educational attainment levels (e.g., bachelor's degree, graduate degree, less than high school) for cities and states in the United States.
+
+### **Datasource 2**: S1901 | Income in the Past 12 Months (2022 Inflation-Adjusted Dollars)
+- **Metadata URL**: [Census S1901 Income Data](https://data.census.gov/table?q=S1901)
+- **Data URL**: Provided CSV file
+- **Data Type**: CSV  
+- **Description**: This dataset contains data on income levels by brackets (e.g., median household income, income distribution) for cities and states in the United States.
+
+---
+
+## **Work Packages**
+
+### **Data Acquisition and Exploration**
+- Load the educational attainment and income datasets from provided CSV files.
+- Inspect the structure, data types, and attributes of each dataset.
+- Document the format, location fields, and key variables for integration.
+
+---
+
+### **Data Cleaning and Preprocessing**
+- Standardize the datasets for alignment (e.g., consistent city/state fields).
+- Convert textual or mixed data types (e.g., income and education levels) to numeric values where necessary.
+- Remove missing or invalid values.
+
+---
+
+### **Data Integration**
+- Merge the educational attainment and income datasets by city and state.
+- Ensure location identifiers align correctly for meaningful correlation analysis.
+
+---
+
+### **Exploratory Data Analysis (EDA)**
+- Visualize the distribution of income levels across different educational attainment brackets.
+- Identify trends and patterns between education levels and median income across states and cities.
+- Highlight cities or states with outliers in educational attainment or income.
+
+---
+
+### **Statistical Analysis**
+- Compute correlation coefficients between education and income metrics.
+- Evaluate regional disparities in the relationship between education and income.
+
+---
+
+### **Report Generation**
+- Create a report summarizing findings, including:
+  - Correlations between education and income.
+  - Regional disparities and trends.
+  - Visualizations (e.g., scatter plots, bar charts).
+- Provide insights into socioeconomic inequality and its relation to education.
