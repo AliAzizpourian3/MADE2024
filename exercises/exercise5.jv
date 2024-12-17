@@ -1,0 +1,60 @@
+pipeline StopsProcessor {
+
+    StopsDataFetcher 
+        -> ZipFileHandler 
+        -> StopsFileSelector;
+    StopsFileSelector
+        -> StopsTextParser
+        -> StopsCsvParser
+        -> StopsDataInterpreter
+        -> StopsDataSaver;
+
+    block StopsDataFetcher oftype HttpExtractor {
+        url: "https://gtfs.rhoenenergie-bus.de/GTFS.zip";
+    }
+
+    block ZipFileHandler oftype ArchiveInterpreter {
+        archiveType: "zip";
+    }
+
+    block StopsFileSelector oftype FilePicker {
+        path: "./stops.txt";
+    }
+
+    block StopsTextParser oftype TextFileInterpreter { }
+
+    block StopsCsvParser oftype CSVInterpreter {
+        delimiter: ",";
+        enclosing: '"';
+    }
+
+    block StopsDataInterpreter oftype TableInterpreter {
+        header: true;
+        columns: [
+            "stop_id" oftype integer,
+            "stop_name" oftype text,
+            "stop_lat" oftype geoCoord,
+            "stop_lon" oftype geoCoord,
+            "zone_id" oftype validZone
+        ];
+    }
+
+    block StopsDataSaver oftype SQLiteLoader {
+        table: "stops";
+        file: "./gtfs.sqlite";
+    }
+
+    valuetype validZone oftype integer {
+        constraints: [zoneConstraint];
+    }
+
+    constraint zoneConstraint on integer:
+        value == 1925;
+
+    valuetype geoCoord oftype decimal {
+        constraints: [geoRange];
+    }
+
+    constraint geoRange on decimal:
+        value >= -90 and value <= 90;
+}
