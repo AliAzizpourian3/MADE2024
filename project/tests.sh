@@ -1,3 +1,5 @@
 #!/bin/bash
 echo "Running tests..."
-python3 -m unittest discover -s tests -p "test_*.py"
+python tests.py
+echo "Tests completed. Press any key to continue..."
+read -n 1

@@ -64,11 +64,15 @@ us_gdp_debt['Quarter'] = us_gdp_debt['Quarter'].dt.to_period('Q')
 
 # Merge all datasets
 final_data = merged_quarterly.merge(us_gdp_debt, on='Quarter', how='inner')
+final_data = final_data[final_data['Quarter'] != '2020Q3']
 
 # Normalize numerical columns
 columns_to_normalize = ['CPIAUCSL', 'UNRATE', 'GDP_MIL', 'DEBT_MIL']
 for col in columns_to_normalize:
     final_data[col] = (final_data[col] - final_data[col].min()) / (final_data[col].max() - final_data[col].min())
+
+# Convert Period columns to strings for SQLite compatibility
+final_data['Quarter'] = final_data['Quarter'].astype(str)
 
 # Save merged and normalized dataset to SQLite database
 conn = sqlite3.connect(f"{DATA_DIR}/final_dataset.sqlite")
@@ -76,3 +80,4 @@ final_data.to_sql("final_combined_quarterly_data", conn, if_exists="replace", in
 conn.close()
 
 print("Pipeline completed successfully. Final dataset saved to SQLite.")
+
