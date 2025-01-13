@@ -1,7 +1,3 @@
-# Exercise Badges
-
-![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex1) ![12 out of 12](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex2) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex3) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex4) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex5)
-
 # Analyzing the Relationship Between Economic Growth and Government Borrowing
 
 This project investigates the relationship between the growth of the U.S. economy (GDP) and the increase in government borrowing (public debt) over time. By analyzing historical data, we aim to uncover trends and relationships between key economic indicators, including GDP, public debt, inflation, and unemployment. Using data analysis and visualization, we seek to provide insights that could inform economic policies and strategies.
