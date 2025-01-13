@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: Continuous Integration
 
 on:
   push:
@@ -7,30 +7,36 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest 
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
+          cd project
           pip install --upgrade pip
-          pip install pandas kaggle sqlite3 matplotlib seaborn
+          pip install pandas
+          pip install SQLAlchemy
+          pip install kaggle
+          pip install matplotlib
+          pip install seaborn
+          pip install simplejson
 
       - name: Set Kaggle credentials
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
-          mkdir -p ~/.kaggle
-          echo "${{ secrets.KAGGLE_JSON }}" > ~/.kaggle/kaggle.json
-          chmod 600 ~/.kaggle/kaggle.json
+          echo "Kaggle credentials set."
 
-      # Step 5: Run the tests
       - name: Run tests
         run: |
           cd project
-          bash tests.sh
+          ./tests.sh
