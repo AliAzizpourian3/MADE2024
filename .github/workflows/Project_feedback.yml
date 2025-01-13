@@ -28,6 +28,7 @@ jobs:
           pip install matplotlib
           pip install seaborn
           pip install simplejson
+          pip install reportlab
 
       - name: Set Kaggle credentials
         env:
