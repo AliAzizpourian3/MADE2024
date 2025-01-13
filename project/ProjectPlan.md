@@ -1,4 +1,4 @@
-# Project Plan
+# Project Plan.md
 
 ## Title
 How the U.S. Economy Has Changed Over Time
