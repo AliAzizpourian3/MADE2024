@@ -1,6 +1,6 @@
 # Exercise Badges
 
-![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex1) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex2) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex3) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex4) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex5)
+![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex1) ![12 out of 12](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex2) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex3) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex4) ![](https://byob.yarr.is/ali-azizpourian/made-template-ss24/score_ex5)
 
 # Analyzing the Relationship Between Economic Growth and Government Borrowing
 
