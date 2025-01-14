@@ -1,4 +1,4 @@
-# Project Plan.md
+# Project Plan
 
 ## Title
 How the U.S. Economy Has Changed Over Time
@@ -36,13 +36,9 @@ This project looks at how the U.S. economy has changed over time by focusing on 
    - Align timeframes and ensure consistency between datasets.
 
 4. **Exploratory Data Analysis (EDA)**
-   - Perform analyses:
-      - Trend Analysis
-      - Debt-to-GDP Ratio Analysis
-      - Correlation Analysis
-      - Economic Events Analysis
-      - Growth Rate Comparisons
-   - Generate visualizations for each analysis.
+   - Perform analysis:
+      - Economic Events and Health Score Analysis
+   - Generate visualization for analysis.
 
 5. **Database Storage:**
    - Store the final combined and normalized dataset in a structured format for future use.
