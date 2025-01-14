@@ -1,7 +1,3 @@
-# Exercise Badges
-
-![](https://byob.yarr.is/magicreally/made-template-ss24/score_ex1) ![](https://byob.yarr.is/magicreally/made-template-ss24/score_ex2) ![](https://byob.yarr.is/magicreally/made-template-ss24/score_ex3) ![](https://byob.yarr.is/magicreally/made-template-ss24/score_ex4) ![](https://byob.yarr.is/magicreally/made-template-ss24/score_ex5)
-
 # Analyzing the Effect of Population Growth on Temperature Changes
 
 This project investigates the relationship between global population growth and temperature changes over the decades. By analyzing historical data, we aim to understand whether there is a connection between the increasing global population and the rising average temperatures. We will look at various factors such as population density, annual growth rates, and average surface temperature variations. Using data analysis and visualization, we seek to provide insights that could inform climate policies and strategies.
