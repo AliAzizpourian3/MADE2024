@@ -12,7 +12,6 @@ if not os.path.exists(DATA_DIR):
 api = KaggleApi()
 api.authenticate()
 
-# Download datasets
 datasets = {
     "us_economic": "alfredkondoro/u-s-economic-indicators-1974-2024",
     "us_debt": "thedevastator/u-s-public-debt-vs-gdp-from-1947-2020"
@@ -70,6 +69,9 @@ final_data = final_data[final_data['Quarter'] != '2020Q3']
 columns_to_normalize = ['CPIAUCSL', 'UNRATE', 'GDP_MIL', 'DEBT_MIL']
 for col in columns_to_normalize:
     final_data[col] = (final_data[col] - final_data[col].min()) / (final_data[col].max() - final_data[col].min())
+
+# Convert Period columns to strings for SQLite compatibility
+final_data['Quarter'] = final_data['Quarter'].astype(str)
 
 # Save merged and normalized dataset to SQLite database
 conn = sqlite3.connect(f"{DATA_DIR}/final_dataset.sqlite")
