@@ -1,7 +1,3 @@
-# Exercise Badges
-
-![](https://byob.yarr.is/AliAzizpourian3/MADE2024/score_ex1) ![](https://byob.yarr.is/AliAzizpourian3/MADE2024/score_ex2) ![](https://byob.yarr.is/AliAzizpourian3/MADE2024/score_ex3) ![](https://byob.yarr.is/AliAzizpourian3/MADE2024/score_ex4) ![](https://byob.yarr.is/AliAzizpourian3/MADE2024/score_ex5)
-
 
 # Analyzing U.S. Economic Growth and Government Borrowing
 
