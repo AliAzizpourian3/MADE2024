@@ -7,22 +7,22 @@ This project investigates the relationship between the growth of the U.S. econom
 
 For a detailed report on our findings and methodologies, please refer to the complete project report:
 
-[Analysis Report](./project/data-report.pdf)
+[Analysis Report](https://github.com/AliAzizpourian3/MADE2024/blob/main/project/analysis-report.pdf)
 
 ## Data Exploration
 
 If you are interested in exploring the datasets used in this project, you can view visualizations and initial analysis in the following file:
 
-[Data Report](./project/data-report.pdf)
+[Data Report](https://github.com/AliAzizpourian3/MADE2024/blob/main/project/data-report.pdf)
 
 ## Presentation
 
 You can also view the slides that summarize this project and its findings:
 
-[Presentation](./project/slides.pdf)
+[Presentation](./project/slides.pdf) # not ready yet!
 
 ## How to Use
 
 ### 1. Clone this Git repository:
 ```bash
-git clone https://github.com/ali-azizpourian/made-template-ss24.git
+git clone https://github.com/AliAzizpourian3/MADE2024.git
